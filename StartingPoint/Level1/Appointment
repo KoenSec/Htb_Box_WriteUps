@@ -1,0 +1,110 @@
+ Task 1
+
+What does the acronym SQL stand for? 
+
+Ans: Structured Query Language
+
+
+ Task 2
+
+What is one of the most common type of SQL vulnerabilities? 
+
+Ans: SQL Injection
+
+ Task 3
+
+What does PII stand for? 
+
+Ans: Personally Identifiable Information
+
+
+ Task 4
+
+What is the 2021 OWASP Top 10 classification for this vulnerability? 
+
+
+Ans: A03:2021 – Injection 
+
+
+ Task 5
+
+What does Nmap report as the service and version that are running on port 80 of the target? 
+
+┌──(kali㉿kali)-[~]
+└─$ nmap -sC -sV 10.129.47.250 -T5
+Starting Nmap 7.92 ( https://nmap.org ) at 2023-02-28 18:22 EST
+Warning: 10.129.47.250 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.129.47.250
+Host is up (0.082s latency).
+Not shown: 591 closed tcp ports (conn-refused), 408 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-title: Login
+|_http-server-header: Apache/2.4.38 (Debian)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 132.04 seconds
+
+
+Ans:   Apache httpd 2.4.38 ((Debian))
+
+
+ Task 6
+
+What is the standard port used for the HTTPS protocol? 
+
+
+Ans :  443
+
+
+ Task 7
+
+What is a folder called in web-application terminology? 
+
+
+Ans: Directory
+
+
+ Task 8
+
+What is the HTTP response code is given for 'Not Found' errors? 
+
+
+Ans: 404
+
+
+ Task 9
+
+Gobuster is one tool used to brute force directories on a webserver. What switch do we use with Gobuster to specify we're looking to discover directories, and not subdomains? 
+
+
+Ans:  Dir
+
+
+ Task 10
+
+What single character can be used to comment out the rest of a line in MySQL? 
+
+
+Ans: #
+
+
+ Task 11
+
+If user input is not handled carefully, it could be interpreted as a comment. Use a comment to login as admin without knowing the password. What is the first word on the webpage returned? 
+
+Username = admin'#    ( use comment to brute force )
+password = anything since the comment comments it out 
+
+
+Ans: Congratulations
+
+
+ Submit Flag
+
+Submit root flag 
+
+
+Ans: e3d0796d002a446c0e622226f42e9672
+
+
